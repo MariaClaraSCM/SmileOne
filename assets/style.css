@@ -90,6 +90,7 @@ section {
     border-radius: 1vw;
     text-align: justify;
     color: #fff;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, .25);
 }
 
 #quemSomos>div {
@@ -110,6 +111,22 @@ section {
     border: none;
 }
 
+#giftCards>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+#giftCards>div>div{
+    width: 70%;
+}
+
+#giftCards>div>div>img{
+    width: 100%;
+}
+
 #duvidas>div {
     width: 90%;
     margin: auto;
@@ -119,6 +136,7 @@ section {
     border-radius: 1vw;
     text-align: justify;
     color: #fff;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, .25);
 }
 
 #duvidas>div>div {
@@ -152,6 +170,8 @@ section {
     border-radius: 1vw;
     text-align: justify;
     color: #fff;
+    margin: 2vw auto;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, .25);
 }
 
 #contato>div {
@@ -193,6 +213,7 @@ form>input {
     background-color: var(--cinza-clarinho);
     color: #fff;
     border: none;
+    border-radius: 5px;
 }
 
 textarea {
@@ -201,6 +222,17 @@ textarea {
     font-size: 1vw;
     height: 6vw;
     background-color: var(--cinza-clarinho);
+    color: #fff;
+    border-radius: 5px;
+}
+
+form>input::placeholder,
+textarea::placeholder {
+    color: #fff !important;
+}
+
+#enviar {
+    background-color: var(--laranja-neon);
     color: #fff;
 }
 
@@ -216,11 +248,47 @@ footer>h2 {
 
 .Infos {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vw;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 2vw 2vw 0vw 2vw;
+}
+
+.Infos>div {
+    width: 20%;
+    display: grid;
 }
 
 .Infos>div>h4 {
     text-align: center;
+    font-size: 2vw;
+    margin-bottom: 1vw;
+}
+
+footer>div>div>a {
+    display: flex;
+    align-items: center;
+    margin: .5vw;
+    gap: 2vw;
+    color: #fff;
+    text-decoration: none;
+    margin: .5vw .5vw 1vw .5vw;
+}
+
+.atalhos>a {
+    justify-content: center;
+}
+
+footer>div>div>a>div {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+footer>div>div>a>div>img {
+    width: 4vw;
+    height: 2vw;
+}
+
+footer>p {
+    padding: 1vw;
 }
