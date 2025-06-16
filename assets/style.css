@@ -66,6 +66,7 @@ nav>a {
     width: 30vw;
     text-align: justify;
     font-size: 3vw;
+    cursor: default;
 }
 
 section {
@@ -75,9 +76,10 @@ section {
 .h2 {
     width: 100%;
     text-align: center;
-    margin-bottom: 1vw;
+    margin-bottom: 3vw;
     font-size: 3vw;
     color: #fff;
+    cursor: default;
 }
 
 #quemSomos>p {
@@ -91,6 +93,7 @@ section {
     text-align: justify;
     color: #fff;
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, .25);
+    cursor: default;
 }
 
 #quemSomos>div {
@@ -113,18 +116,48 @@ section {
 
 #giftCards>div {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5vw;
+    grid-row-gap: 10vw;
+    justify-content: center;
+    align-items: center;
 }
 
-#giftCards>div>div{
-    width: 70%;
-}
-
-#giftCards>div>div>img{
+.cards {
     width: 100%;
+    height: 19vw;
+    display: flex;
+    background-color: var(--cinza-escuro);
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 1vw;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, .25);
+}
+
+.cards>p {
+    color: #fff;
+    padding: 1vw;
+    cursor: default;
+}
+
+.cards>img {
+    width: 5%;
+    margin: 0 0 1vw 1vw;
+}
+
+.cards>div {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    overflow: hidden;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.cardImg {
+    width: 100%;
+    border-radius: 1vw;
 }
 
 #duvidas>div {
@@ -148,6 +181,7 @@ section {
 
 #duvidas>div>div>h3 {
     width: 50%;
+    cursor: default;
 }
 
 #duvidas>div>div>p {
@@ -159,6 +193,7 @@ section {
     font-size: 1.5vw;
     height: 3vw;
     overflow: hidden;
+    cursor: default;
 }
 
 #contato {
@@ -182,6 +217,7 @@ section {
 
 #contato>h2 {
     margin: 1vw 0 2vw 0;
+    cursor: default;
 }
 
 form {
@@ -244,6 +280,7 @@ footer {
 footer>h2 {
     color: var(--laranja-neon);
     padding: 1.5vw 0 0 2vw;
+    cursor: default;
 }
 
 .Infos {
@@ -262,6 +299,7 @@ footer>h2 {
     text-align: center;
     font-size: 2vw;
     margin-bottom: 1vw;
+    cursor: default;
 }
 
 footer>div>div>a {
@@ -291,4 +329,8 @@ footer>div>div>a>div>img {
 
 footer>p {
     padding: 1vw;
+}
+
+button{
+    cursor: pointer;
 }
